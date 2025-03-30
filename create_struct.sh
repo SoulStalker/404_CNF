@@ -36,7 +36,7 @@ mkdir -p interfaces/web/dtos
 
 mkdir -p interfaces/cli
 
-mkdir -p interfaces/game_client/unity/scripts
+mkdir -p interfaces/game_client/godot
 
 # Создание файлов
 touch domain/map/aggregates/map.py
@@ -75,14 +75,11 @@ touch infrastructure/persistence/map/mongo_map_repo.py
 touch infrastructure/persistence/quests/postgres_quest_repo.py
 touch infrastructure/event_bus/rabbitmq_event_bus.py
 touch infrastructure/event_bus/in_memory_event_bus.py
-touch infrastructure/game_engine/unity_integration.py
 
 touch interfaces/web/controllers/map_controller.py
 touch interfaces/web/controllers/quest_controller.py
 touch interfaces/web/dtos/location_dto.py
 
 touch interfaces/cli/game_console.py
-
-touch interfaces/game_client/unity/scripts/location_loader.cs
 
 echo "Структура директорий и файлов успешно создана."
